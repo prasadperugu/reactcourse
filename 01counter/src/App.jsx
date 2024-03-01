@@ -13,7 +13,18 @@ function App() {
   const addValue = () => {
     // counter = counter + 1
     // console.log(counter);
-    setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    setCounter((pcounter)=>pcounter+1)
+    setCounter((pcounter)=>pcounter+1)
+    setCounter((pcounter)=>pcounter+1)
+
+  }
+
+  const removeValue = () =>{
+    setCounter(counter -1)
   }
 
   return (
@@ -23,7 +34,11 @@ function App() {
   <button
   onClick={addValue}
   >Add Value</button> {" "}
-  <button>Remove Value</button>
+  <button
+  onClick={
+    removeValue
+  }
+  >Remove Value</button>
   <p>footer: {counter}</p>
   </>
   )
